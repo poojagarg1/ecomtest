@@ -15,11 +15,6 @@ import com.ecommerce.service.impl.CartServiceImpl;
 public class CartController {
 	@Autowired
 	private CartService cartService;
-
-	@GetMapping("/hello")
-	public String getaa() {
-		return "hello";
-	}
 	
 	@PostMapping("/netPayableAmount")
 	public double netPayableAmount(@RequestBody Cart cart) {
